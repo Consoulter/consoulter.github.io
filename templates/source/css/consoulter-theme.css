@@ -1,0 +1,299 @@
+.ct-brand
+{
+	position: relative;
+	top: 5px;
+}
+.ct-brand__image
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.ct-brand__title
+{
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 60px;
+}
+
+
+#ct-main {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.ct-main__hero {
+    margin-top: 0;
+    min-height: 100vh;
+    padding-top: 90px;
+    background-color: rgb(41, 42, 248);
+}
+
+.ct-main__message {
+    margin-top: 0;
+    padding-top: 90px;
+    min-height: 15vh;
+    color: white;
+    background-color: rgb(41, 42, 248);
+}
+
+/*
+ * ========
+ * perfil
+ * ========
+ */
+
+.ct-perfil
+{
+	background-color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -10px;
+    padding: 10px;
+}
+
+.ct-pefil__tags .ct-tag {
+    border-color: #3c3df7;
+    color: #3c3df7;
+    border-width: 1px;
+}
+.ct-perfil__user-media {
+    width: 95% !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+.ct-perfil__user-name {
+    text-align: center;
+}
+
+.ct-perfil__hr
+{
+	width: 80%;
+	margin: -10px auto 15px auto;
+}
+
+.ct-user__live
+{
+	clear: left;
+}
+
+
+/*
+ * ========
+ * usuario , [user][USER]
+ * ========
+ */
+.ct-user__media {
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+}
+
+.ct-user__image {
+    width: 100%;
+}
+
+.ct-users {
+    max-height: 100%;
+    width: calc(1.5rem + 100%);
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+.ct-users:hover {.ct-users {
+    max-height: 100%;
+    width: calc(1.5rem + 100%);
+    overflow: scroll;
+    overflow-x: hidden; }
+    width: calc(1.5rem + 100%);
+    width: calc( 0rem + 100%);
+}
+
+.ct-user--list {
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ct-user--list--active,.ct-user--list:hover {
+    background: rgb(249, 249, 249);
+    box-shadow: -5px 6px 10px -8px, 0px 0px 10px -5px;
+}
+
+
+.ct-user--list .ct-user__media {
+    display: inline-block;
+    width: 50px;
+    padding-top: 10px;
+}
+
+.ct-user--list .ct-user__name {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.ct-user--list .ct-user__message {
+    width: 70%;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 13px;
+    overflow: hidden;
+    max-height: 50px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 65px;
+}
+
+.ct-user--list .ct-user__message--show {
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+.ct-user--list .ct-user__message--new {
+    font-weight: bolder;
+    opacity: 1;
+}
+
+
+/*
+ * ========
+ * Card
+ * ========
+ */
+.ct-cards
+{
+	margin-top: 70px;
+}
+.ct-cards > .container, .ct-cards > .container-fluid
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ct-cards .container > .col, .ct-cards .container-fluid > .col {
+	display: flex;
+}
+
+.ct-card
+{
+	width: 95%;
+	background: white;
+	border-radius: 5px;
+	padding: 15px 15px 15px 15px;
+	margin-bottom: 30px;
+	transition: .5s;
+}
+.ct-card:hover
+{
+	box-shadow: 0 5px 25px -15px, 0 10px 15px -20px;
+    transition: .5s;
+}
+
+.ct-card--select {
+    border-width: 2px;
+    border-color: #2ca8ff;
+    border-style: solid;
+}
+
+.ct-card__select {
+    position: relative;
+    top: -10px;
+    right: -10px;
+    margin-bottom: -10px;
+}
+
+.ct-card__select .text-muted {
+    padding-top: 0;
+    position: relative;
+    top: -5px;
+}
+
+.animate--load
+{
+	background-color: #dadada;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.animate--load:hover 
+{
+    box-shadow: none;
+    animation-duration: 3s;
+}
+
+@keyframes load
+{
+	0%{
+		background-color: #dadada;
+	}
+	60%{
+		background-color: #eeeeee;
+	}
+	100%{
+		background-color: #dadada;
+	}
+
+}
+
+.ct-tag
+{
+	margin-bottom: 5px;
+}
+
+
+/*
+ * ========
+ * CHATS
+ * ========
+ */
+
+.ct-chats__container
+{
+	height: 100vh;
+    max-height: 100vh;
+    border-right: .5px solid rgb(255, 255, 255);
+    border-left: .5px solid rgb(5, 152, 255);
+    background: white;
+    margin-top: -90px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*
+ * ========
+ * NAV ACTION
+ * ========
+ */
+
+.ct-nav_action {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid #d0d0d0;
+    padding: 5px;
+    width: 100%;
+}
+/*
+ * ========
+ * Custom Theme Creative Time
+ * ========
+ */
+.navbar-ct-blue {
+    background-color: rgba(0, 150, 255, 0.98);
+}

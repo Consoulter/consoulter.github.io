@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asesores List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+
+		img[responsive]
+		{
+			display: none;
+		}
+		@media (min-width: 140px)
+		{
+			img[responsive="movile"] {
+				display: inline-block;
+			}
+			img[responsive="tablet"] {
+				display: none;
+			}
+			img[responsive="desktop"] {
+				display: none;
+			}
+		}
+		@media (min-width: 720px)
+		{
+			img[responsive="movile"] {
+				display: none;
+			}
+			img[responsive="tablet"] {
+				display: inline-block;
+			}
+			img[responsive="desktop"] {
+				display: none;
+			}
+		}
+		@media (min-width: 1000px)
+		{
+			img[responsive="movile"] {
+				display: none;
+			}
+			img[responsive="tablet"] {
+				display: none;
+			}
+			img[responsive="desktop"] {
+				display: inline-block;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+
+<header class="header_movile">
+	<div class="brand">
+		<h1>Consoulter</h1>
+	</div>
+	<nav class="header-movile__nav">
+		<li class="header-movile__item item--popud header-search">
+			<span class="header-search__buttom">Buscar</span>
+			<div class="item_container">
+				<input class="header-search__text" type="text" name="search_text">
+				<input class="header-search__submit" type="submit" name="search_submit" value="buscar">
+			</div>
+		</li>
+		<li class="header-movile__item item--side header-profile">
+			<span class="header-profile__buttom">Perfil</span>
+			<div class="item_container">
+				
+			</div>
+		</li>
+	</nav>
+</header>
+<div class="list_teachers">
+	<li class="teacher_item">
+		<div class="teacher">
+			<img src="source/img/nick_100x100.png" class="teacher_image" responsive="movile">
+			<img src="source/img/nick_200x200.png" class="teacher_image" responsive="tablet">
+			<img src="source/img/nick_350x350.png" class="teacher_image" responsive="desktop">
+			<a class="teacher_name">Pepito Peres</a>
+			<small class="teacher_level">200</small>
+		</div>
+		<div class="teacher-course">
+			<img src="source/img/course_300x200.png" class="teacher-course__image" responsive="movile">
+			<img src="source/img/course_600x400.png" class="teacher-course__image" responsive="tablet">
+			<img src="source/img/course_1200x800.png" class="teacher-course__image" responsive="desktop">
+			<h2 class="teacher-course__title">Clases de Ingles Personalizadas</h2>
+			<small class="teacher-course__starts">100</small>
+			<ul class="teacher-course__keys">
+				<li class="teacher-course__key">ingles</li>
+				<li class="teacher-course__key">ingles cucuta</li>
+				<li class="teacher-course__key">clases de ingles</li>
+			</ul>
+		</div>
+	</li>
+</div>
+<link rel="stylesheet" type="text/css" href="source/css/movile_theme.css">
+</body>
+</html>
